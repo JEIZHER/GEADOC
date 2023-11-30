@@ -23,7 +23,7 @@ function Home() {
 					<div className=' flex flex-col justify-between w-auto h-screen pb-10  pt-12 px-7 sm:px-16 bg-intro2 opacity-95 bg-cover sm:pt-24  lg:pt-[200px]  '>
 						<div className=' sm:flex sm:flex-col sm:space-x-3 '>
 							<h1 className='text-3xl sm:text-5xl lg:text-6xl text-white  mb-6 font-bold'>
-								GEADOC
+								SOLUCION GEA
 							</h1>
 							<p className='select-none mb-7'>(testing website)</p>
 						</div>
