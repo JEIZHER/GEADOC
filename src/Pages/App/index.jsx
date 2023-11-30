@@ -4,7 +4,7 @@ import Footer from '../../Components/Footer'
 import Home from '../Home'
 import Login from '../Login'
 import Register from '../Register'
-import {ContextCryptosProvider} from '../../Context'
+import { ContextCryptosProvider } from '../../Context'
 import './App.css'
 
 const AppRoutes = () => {
@@ -12,23 +12,20 @@ const AppRoutes = () => {
 		{ path: '/', element: <Home /> },
 		{ path: '/Login', element: <Login /> },
 		{ path: '/Register', element: <Register /> },
-		
 	])
 	return routes
 }
 
-		const App = () => {
-			return (
-		
-				<BrowserRouter>
-			<ContextCryptosProvider>	
-					<Sidebar />
-					<AppRoutes />
-			</ContextCryptosProvider>		
-					<Footer />
-				</BrowserRouter>
-		
-			)
-		}
+const App = () => {
+	return (
+		<BrowserRouter>
+			<ContextCryptosProvider>
+				<Sidebar />
+				<AppRoutes />
+			</ContextCryptosProvider>
+			<Footer />
+		</BrowserRouter>
+	)
+}
 
 export default App

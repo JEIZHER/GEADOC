@@ -8,9 +8,9 @@ const Form = () => {
 	const onChange = () => {
 		const btn = document.getElementById('B_send')
 		if (captcha.current.getValue()) {
-			 btn.disabled = false
+			btn.disabled = false
 		} else {
-			 btn.disabled = true
+			btn.disabled = true
 		}
 	}
 	const sendEmail = (e) => {
@@ -33,7 +33,7 @@ const Form = () => {
 					btn.classList.remove('opacity-100')
 					// btn.classList.add('opacity-50')
 					// btn.classList.add('disabled')
-					 btn.disabled 
+					btn.disabled
 				},
 				(error) => {
 					btn.value = 'SEND'

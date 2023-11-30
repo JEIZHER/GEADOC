@@ -1,20 +1,9 @@
 import React, { useEffect, Suspense } from 'react'
 import Loading from '../../Utils/Loading'
 const Form = React.lazy(() => import('../../Components/Form'))
-const CardsNews = React.lazy(() => import('../../Components/CardsNews'))
+// const CardsNews = React.lazy(() => import('../../Components/CardsNews'))
 import Observer from '../../Utils/Observer'
 function Home() {
-
-	const data_sec_1 = [
-		{
-			titulo: 'LOgistica',
-			texto:
-				' fdkgkldfgkdfhghkldfhgkdhgrfkgkfdgkfj',
-			imagen: '/pic01.webp',
-			referencia: '#',
-		},
-	]
-
 	
 	return (
 		<>
