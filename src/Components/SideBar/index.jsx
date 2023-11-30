@@ -14,6 +14,12 @@ const Sidebar = () => {
 					</a>
 
 				</li>
+				<li>
+			    	<a href="/Register">
+						Registro
+					</a>
+
+				</li>
 			
 				<li>
 					<a
@@ -50,7 +56,7 @@ const Sidebar = () => {
 	
 				<li>
 					<a  className={`btn_sidebar btn-menu3 lg:pr-[113px]`}>
-						GRAFICO
+						LogIn
 					</a>
 				</li>
 	
