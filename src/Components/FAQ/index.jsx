@@ -167,7 +167,7 @@ function FAQ() {
 							</span>
 						</summary>
 						<p className='text-neutral-400 mt-3 group-open:animate-fadeIn'>
-							Documentation is available on the company's website and can be
+							Documentation is available on the company&aposs website and can be
 							accessed by logging in to your account. The documentation provides
 							detailed information on how to use the , as well as code examples
 							and other resources.
@@ -196,7 +196,7 @@ function FAQ() {
 						</summary>
 						<p className='text-neutral-400 mt-3 group-open:animate-fadeIn'>
 							If you need help with the platform or have any other questions,
-							you can contact the company's support team by submitting a support
+							you can contact the company&aposs support team by submitting a support
 							request through the website or by emailing support@We.com.
 						</p>
 					</details>
@@ -224,7 +224,7 @@ function FAQ() {
 						<p className='text-neutral-400 mt-3 group-open:animate-fadeIn'>
 							We may offer discounts or promotions from time to time. To stay
 							up-to-date on the latest deals and special offers, you can sign up
-							for the company's newsletter or follow it on social media.
+							for the company&aposs newsletter or follow it on social media.
 						</p>
 					</details>
 				</div>
