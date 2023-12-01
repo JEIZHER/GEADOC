@@ -5,6 +5,7 @@ import Home from '../Home'
 import Login from '../Login'
 import Register from '../Register'
 import Quotes from '../Quotes'
+import Client from '../Client'
 import { ContextCryptosProvider } from '../../Context'
 import './App.css'
 
@@ -14,6 +15,7 @@ const AppRoutes = () => {
 		{ path: '/Login', element: <Login /> },
 		{ path: '/Register', element: <Register /> },
 		{ path: '/Quotes', element: <Quotes /> },
+		{ path: '/Client', element: <Client /> },
 	])
 	return routes
 }

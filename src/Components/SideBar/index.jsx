@@ -22,7 +22,7 @@ const Sidebar = () => {
 						</li>
 					</div>
 
-					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-9 w-full'>
+					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-10 w-full h-full'>
 						<li>
 							<a
 								href='#intro'
@@ -47,7 +47,6 @@ const Sidebar = () => {
 							</a>
 						</li>
 
-	
 						<li>
 							<a href='#four' className='btn_sidebar lg:pr-[60px]'>
 								Otros servicios
@@ -80,6 +79,41 @@ const Sidebar = () => {
 						</li>
 					</div>
 				</ul>
+			) 
+			: Location.pathname === '/Client' ? (
+				<ul className='flex lg:flex-col gap-3'>
+					<div className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg' >	
+						<li>
+						<a href='/' className='pl-4'>
+							HOME
+						</a>
+					</li>
+					</div>
+				
+					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-11 w-full h-full'>
+						<li>
+							<a className={`btn_sidebar bg-blue-700 lg:pr-[70px]`}>Rastreo</a>
+						</li>
+
+						<li>
+							<a className={`btn_sidebar bg-blue-700 lg:pr-[35px]`}>
+								Cotizaciones
+							</a>
+						</li>
+
+						<li>
+							<a className={`btn_sidebar bg-blue-700 lg:pr-[50px]`}>
+								Contratar servicio
+							</a>
+						</li>
+
+						<li>
+							<a className={`btn_sidebar bg-blue-700 lg:pr-[40px]`}>
+								LLenar formularios
+							</a>
+						</li>
+					</div>
+				</ul>
 			) : (
 				<ul className='relative menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-7 w-full  lg:ml-6'>
 					<li>
@@ -89,7 +123,9 @@ const Sidebar = () => {
 					</li>
 
 					<li>
-						<a className={`btn_sidebar bg-blue-700 lg:pr-[113px]`}>{Location.pathname}</a>
+						<a className={`btn_sidebar bg-blue-700 lg:pr-[113px]`}>
+							{Location.pathname}
+						</a>
 					</li>
 				</ul>
 			)}

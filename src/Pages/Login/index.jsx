@@ -79,7 +79,7 @@ function Login  () {
 								</a>
 							</div>
 							<div className='flex justify-center w-full'>
-							<Boton referencia='/' Titulo='Sign in'/>	
+							<Boton referencia='/Client' Titulo='Sign in'/>	
 							</div>
 							
 							{/* <button
