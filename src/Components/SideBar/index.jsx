@@ -8,8 +8,8 @@ const Sidebar = () => {
 
 		<nav className='hidden fixed top-0 h-12 w-full z-10 lg:pr-1 lg:h-full  lg:w-[200px]  bg-gray-900 sm:flex flex-row lg:flex-col justify-center items-center text-white text-bold text-[11px] '>
 			{Location.pathname === '/' ? (
-				<ul className='lg:flex lg:flex-col  '>
-					<div className='lg:mr-1 mb-20 text-lg'>
+				<ul className='flex lg:flex-col  '>
+					<div className='flex flex-row lg:block lg:mr-1 lg:mb-20 text-lg'>
 						<li>
 							<a href='/Login' className='pl-4'>
 								Login
@@ -63,7 +63,7 @@ const Sidebar = () => {
 					</li>
 
 					<li>
-						<a className={`btn_sidebar btn-menu3 lg:pr-[113px]`}>LogIn</a>
+						<a className={`btn_sidebar bg-blue-700 lg:pr-[113px]`}>{Location.pathname}</a>
 					</li>
 				</ul>
 			)}
