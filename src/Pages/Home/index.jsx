@@ -23,23 +23,34 @@ function Home() {
 
 				<section
 					id='one'
-					className='flex flex-col justify-center pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16 h-full  bg-gradient-to-l from-violet-500 to-blue-700'
+					className='pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16 h-full  bg-gradient-to-l from-violet-500 to-blue-700'
 				>
-					<div className=' sm:flex sm:items-center sm:space-x-3 '>
+					<div className=' sm:flex sm:items-center sm:space-x-3 w-full h-screen '>
 						<h1 className='text-2xl font-bold sm:text-3xl  mb-4'>Quienes Somos</h1>
 					</div>
 					<p className='select-none mb-7'>
-						Stay up-to-date with our latest news and updates
+						contenido sobre la pagina
 					</p>
 					
 				</section>
 
 				<section
 					id='two'
-					className='flex flex-col justify-center pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16  h-full w-full bg-gradient-to-l from-blue-400 to-blue-800'
+					className='pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16  h-full  bg-gradient-to-l from-blue-400 to-blue-800'
 				>
-					<div className=' sm:flex sm:items-center sm:space-x-3 '>
+					<div className=' sm:flex sm:items-center sm:space-x-3 h-screen '>
 						<h1 className='text-2xl font-bold mb-4 sm:text-3xl'>Nuestros Aliados</h1>
+					</div >
+					<p className='select-none mb-7 '>
+					jgdgjhjdhgjdhgj
+					</p>
+				</section>
+				<section
+					id='three'
+					className='pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16  h-full bg-gradient-to-l from-blue-400 to-blue-700'
+				>
+					<div className=' sm:flex sm:items-center sm:space-x-3 h-screen'>
+						<h1 className='text-2xl font-bold mb-4 sm:text-3xl'>Cotizaciones</h1>
 					</div >
 					<p className='select-none mb-7 '>
 					jgdgjhjdhgjdhgj
@@ -47,7 +58,7 @@ function Home() {
 				</section>
 
 				<section
-					id='three'
+					id='four'
 					className='flex flex-col justify-center pb-10 px-7 pt-12 sm:pt-24 lg:pt-12 sm:px-16 h-full  bg-gradient-to-l from-violet-500 to-blue-700'
 				>
 					<div className=' sm:flex sm:items-center sm:space-x-3 '>

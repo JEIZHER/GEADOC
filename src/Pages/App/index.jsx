@@ -4,6 +4,7 @@ import Footer from '../../Components/Footer'
 import Home from '../Home'
 import Login from '../Login'
 import Register from '../Register'
+import Quotes from '../Quotes'
 import { ContextCryptosProvider } from '../../Context'
 import './App.css'
 
@@ -12,6 +13,7 @@ const AppRoutes = () => {
 		{ path: '/', element: <Home /> },
 		{ path: '/Login', element: <Login /> },
 		{ path: '/Register', element: <Register /> },
+		{ path: '/Quotes', element: <Quotes /> },
 	])
 	return routes
 }
