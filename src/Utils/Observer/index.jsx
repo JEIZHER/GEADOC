@@ -21,7 +21,18 @@ const Observer = () => {
 							: id === 'two'
 							? 'btn-menu3'
 							:  id === 'three'
-							?'btn-menu2':'btn-menu2'
+							?'btn-menu2'
+							: id === 'four'
+							?'btn-menu3'
+							: id === 'five'
+							?'btn-menu2'
+							: id === 'six'
+							?'btn-menu3'
+							:id === 'seven'
+							?'btn-menu2'
+							:id === 'eigth'
+							?'btn-menu3'
+							:'btn-menu2'
 					menuLink.classList.add(activeStyle)
 				}
 			})

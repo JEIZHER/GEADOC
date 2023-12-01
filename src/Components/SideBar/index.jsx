@@ -47,8 +47,34 @@ const Sidebar = () => {
 							</a>
 						</li>
 
+	
 						<li>
 							<a href='#four' className='btn_sidebar lg:pr-[60px]'>
+								Otros servicios
+							</a>
+						</li>
+						<li>
+							<a href='#five' className='btn_sidebar lg:pr-[60px]'>
+								Noticias
+							</a>
+						</li>
+						<li>
+							<a href='#six' className='btn_sidebar lg:pr-[60px]'>
+								Aprende con GEA
+							</a>
+						</li>
+						<li>
+							<a href='#seven' className='btn_sidebar lg:pr-[105px]'>
+								FAQ
+							</a>
+						</li>
+						<li>
+							<a href='#eigth' className='btn_sidebar lg:pr-[60px]'>
+								Servicio al cliente
+							</a>
+						</li>
+						<li>
+							<a href='#nine' className='btn_sidebar lg:pr-[60px]'>
 								Contactos
 							</a>
 						</li>
