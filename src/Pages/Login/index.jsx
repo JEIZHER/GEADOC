@@ -1,6 +1,6 @@
 // import { useLocation } from 'react-router-dom'
 
-const Login = () => {
+function Login  () {
 	// let { state } = useLocation()
 	return (
 		<section className='bg-gray-50 dark:bg-gray-900'>
