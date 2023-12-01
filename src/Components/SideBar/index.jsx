@@ -79,36 +79,49 @@ const Sidebar = () => {
 						</li>
 					</div>
 				</ul>
-			) 
-			: Location.pathname === '/Client' ? (
+			) : Location.pathname === '/Client' ? (
 				<ul className='flex lg:flex-col gap-3'>
-					<div className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg' >	
+					<div className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg'>
 						<li>
-						<a href='/' className='pl-4'>
-							HOME
-						</a>
-					</li>
+							<a href='/' className='pl-4'>
+								HOME
+							</a>
+						</li>
 					</div>
-				
+
 					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-11 w-full h-full'>
 						<li>
-							<a className={`btn_sidebar bg-blue-700 lg:pr-[70px]`}>Rastreo</a>
+							<a
+								href='#C_one'
+								className={`btn_sidebar lg:pr-[70px]`}
+							>
+								Rastreo
+							</a>
 						</li>
 
 						<li>
-							<a className={`btn_sidebar bg-blue-700 lg:pr-[35px]`}>
+							<a
+								href='#C_two'
+								className={`btn_sidebar  lg:pr-[35px]`}
+							>
 								Cotizaciones
 							</a>
 						</li>
 
 						<li>
-							<a className={`btn_sidebar bg-blue-700 lg:pr-[50px]`}>
+							<a
+								href='#C_three'
+								className={`btn_sidebar  lg:pr-[50px]`}
+							>
 								Contratar servicio
 							</a>
 						</li>
 
 						<li>
-							<a className={`btn_sidebar bg-blue-700 lg:pr-[40px]`}>
+							<a
+								href='#C_four'
+								className={`btn_sidebar  lg:pr-[40px]`}
+							>
 								LLenar formularios
 							</a>
 						</li>

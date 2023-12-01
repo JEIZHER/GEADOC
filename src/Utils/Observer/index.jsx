@@ -32,7 +32,16 @@ const Observer = () => {
 							?'btn-menu2'
 							:id === 'eigth'
 							?'btn-menu3'
+							:id === 'nine'
+							?'btn-menu2'
+							:id === 'C_one'
+							?'btn-menu3'
+							:id === 'C_two'
+							?'btn-menu2'
+							:id === 'C_three'
+							?'btn-menu3'
 							:'btn-menu2'
+							
 					menuLink.classList.add(activeStyle)
 				}
 			})
