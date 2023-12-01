@@ -1,4 +1,5 @@
 // import { useLocation } from 'react-router-dom'
+import Boton from '../../Components/Boton'
 
 function Login  () {
 	// let { state } = useLocation()
@@ -12,7 +13,7 @@ function Login  () {
 					{/* <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo">
           Flowbite     */}
 				</a>
-				<div className='w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700'>
+				<div className='w-full bg-blue-100 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700'>
 					<div className='p-6 space-y-4 md:space-y-6 sm:p-8'>
 						<h1 className='text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white'>
 							Sign in to your account
@@ -77,12 +78,16 @@ function Login  () {
 									Forgot password?
 								</a>
 							</div>
-							<button
+							<div className='flex justify-center w-full'>
+							<Boton referencia='/' Titulo='Sign in'/>	
+							</div>
+							
+							{/* <button
 								type='submit'
-								className='w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
+								className='w-full text-gray-600 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'					
 							>
 								Sign in
-							</button>
+							</button> */}
 							<p className='text-sm font-light text-gray-500 dark:text-gray-400'>
 								Don’t have an account yet?{' '}
 								<a
