@@ -1,7 +1,0 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-  Content-Security-Policy= '''
-   script-src 'self' 'sha256-ac1XKlQjJ0y9V+D6VODPMoiVQ+aPB+VG6mR9qn/aicc=''sha256-PPH+Xc+AYOnDBdZljnllkW05WmzRo46g9+ui2PLQGWw=';
-   object-src 'none';
-   base-uri 'none';'''
