@@ -17,7 +17,7 @@ function Home() {
 							<h1 className='text-3xl sm:text-5xl lg:text-6xl text-white  mb-6 font-bold'>
 								SOLUCION GEA
 							</h1>
-							<h2 className='text-2xl  font-bold'>Desafío</h2>
+							<h2 className='text-2xl  font-bold pt-20'>Desafío</h2>
 							<p className='select-none mb-7  font-medium'>
 								Gestionar y realizar la trazabilidad digital de una carga desde
 								el mismo momento en que la Empresa interesada solicita una

@@ -124,7 +124,7 @@ const Form = () => {
 					</li>
 					<li className='mt-6'>
 						<h1 className='text-1xl font-bold mb-3'>Email</h1>
-						<a href='#'>cripto-limitless.gmail.com</a>
+						<a href='#'>mail.gmail.com</a>
 					</li>
 					<li className='mt-6'>
 						<h1 className='text-1xl font-bold mb-3'>Phone</h1>
