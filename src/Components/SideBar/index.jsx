@@ -82,7 +82,7 @@ const Sidebar = () => {
 				</div>
 
 			) : Location.pathname === '/Client' ? (
-				<div className='flex lg:flex-col gap-3'>
+				<div className='flex flex-col gap-3'>
 					<ul className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg'>
 						<li>
 							<a href='/' className='pl-4'>
@@ -91,7 +91,7 @@ const Sidebar = () => {
 						</li>
 					</ul>
 
-					<ul className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-11 w-full h-full'>
+					<ul className='menu flex  justify-center flex-col gap-4 lg:gap-10 w-full h-full'>
 						<li>
 							<a href='#C_one' className={`btn_sidebar lg:pr-[70px]`}>
 								Rastreo
@@ -119,7 +119,7 @@ const Sidebar = () => {
 				</div>
 
 			) : (
-				<ul className='relative menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-7 w-full  lg:ml-6'>
+				<ul className='relative menu flex justify-center flex-col gap-4 lg:gap-7 w-full  ml-6'>
 					<li>
 						<a href='/' className={`btn_sidebar  lg:pr-[131px]`}>
 							HOME
