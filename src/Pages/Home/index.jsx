@@ -8,7 +8,7 @@ import Observer from '../../Utils/Observer'
 function Home() {
 	return (
 		<>
-			<div className=' text-sm  text-gray-100  sm:text-base lg:ml-[200px] min-w-[420px]'>
+			<div className='relative text-sm  text-gray-100 mt-12  sm:text-base lg:mt-0 lg:top-0 lg:left-[200px] lg:w-[calc(100%-200px)] min-w-[420px]'>
 				<section id='intro' className='bg-intro bg-cover bg-fixed'>
 					<div className=' flex flex-col  w-auto h-screen pb-10  pt-12 px-7 sm:px-16 bg-intro2 opacity-95 bg-cover sm:pt-24  lg:pt-[200px]  '>
 						{/* <img src="/Logo.png" alt="" className='w-40 '  /> */}
@@ -74,7 +74,7 @@ function Home() {
 							Otros servicios
 						</h1>
 					</div>
-					<p className='select-none mb-7 '>jgdgjhjdhgjdhgj</p>
+					{/* <p className='select-none mb-7 '>jgdgjhjdhgjdhgj</p> */}
 				</section>
 				<section
 					id='five'
@@ -118,7 +118,7 @@ function Home() {
 							Servicio al cliente
 						</h1>
 					</div>
-					<p className='select-none mb-7 '>jgdgjhjdhgjdhgj</p>
+					{/* <p className='select-none mb-7 '>jgdgjhjdhgjdhgj</p> */}
 				</section>
 				<section
 					id='nine'
@@ -128,13 +128,7 @@ function Home() {
 						<h1 className='text-2xl font-bold mb-4'>GET IN TOUCH</h1>
 					</div>
 					<p className='select-none mb-7'>
-						“We would love to hear from you! If you have any questions,
-						comments, or concerns, please don’t hesitate to reach out to us. Our
-						team is dedicated to providing you with the best possible
-						experience, and we are always here to help. You can contact us by
-						filling out the form below, sending us an email at
-						cripto-limitless.gmail.com. We look forward to hearing from you
-						soon!”
+						“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”
 					</p>
 					<Suspense fallback={<Loading />}>
 						<Form />

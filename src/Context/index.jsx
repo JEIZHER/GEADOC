@@ -1,12 +1,15 @@
-import { createContext } from 'react'
+import {useState, createContext } from 'react'
+import {  } from "react"
 
-export const ContextDatCryptos = createContext()
+export const GeaDocContext = createContext()
 
-export const ContextCryptosProvider = ({ children }) => {
-
-	return (
-		<ContextDatCryptos.Provider value={{}}>
+export const GeaDocProvider = ({ children }) => {
+const [isOpen,setIsOpen]= useState(true)	
+	return(
+		 <GeaDocContext.Provider value={{
+			isOpen,
+			setIsOpen
+		 }}>
 			{children}
-		</ContextDatCryptos.Provider>
-	)
+		 </GeaDocContext.Provider>)
 }

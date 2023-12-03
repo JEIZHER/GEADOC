@@ -1,12 +1,13 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom'
 import Sidebar from '../../Components/SideBar'
+import Menu from '../../Components/Menu'
 import Footer from '../../Components/Footer'
 import Home from '../Home'
 import Login from '../Login'
 import Register from '../Register'
 import Quotes from '../Quotes'
 import Client from '../Client'
-import { ContextCryptosProvider } from '../../Context'
+import { GeaDocProvider } from '../../Context'
 import './App.css'
 
 const AppRoutes = () => {
@@ -23,10 +24,11 @@ const AppRoutes = () => {
 const App = () => {
 	return (
 		<BrowserRouter>
-			<ContextCryptosProvider>
+			<GeaDocProvider>
+				<Menu/>
 				<Sidebar />
 				<AppRoutes />
-			</ContextCryptosProvider>
+			</GeaDocProvider>
 			<Footer />
 		</BrowserRouter>
 	)

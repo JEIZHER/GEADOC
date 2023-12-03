@@ -1,15 +1,16 @@
 import { useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import {GeaDocContext} from '../../Context'
 
 const Sidebar = () => {
+	const context = useContext(GeaDocContext)
 	const activeStyle = 'btn-menu'
 	const Location = useLocation()
 	return (
-		// Sidebar
-
-		<nav className='hidden fixed top-0 h-12 w-full z-10 lg:pr-1 lg:h-full  lg:w-[200px]  bg-gray-900 sm:flex flex-row lg:flex-col justify-center items-center text-white text-bold text-[11px] '>
+		<nav className={ ` ${context.isOpen &&'hidden'} fixed top-12  lg:top-0  z-10 pr-1 h-full  w-[200px]  bg-gray-900  flex flex-col lg:flex justify-center items-center text-white text-bold text-[11px]`} >
 			{Location.pathname === '/' ? (
-				<ul className='flex lg:flex-col  '>
-					<div className='flex flex-row lg:block lg:mr-1 lg:mb-20 text-lg'>
+				<div className='flex flex-col  '>
+					<ul className='block mr-1 mb-20 text-lg'>
 						<li>
 							<a href='/Login' className='pl-4'>
 								Login
@@ -20,9 +21,9 @@ const Sidebar = () => {
 								Registro
 							</a>
 						</li>
-					</div>
+					</ul>
 
-					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-10 w-full h-full'>
+					<ul className='menu flex  justify-center flex-col gap-4 lg:gap-10 w-full h-full'>
 						<li>
 							<a
 								href='#intro'
@@ -77,56 +78,46 @@ const Sidebar = () => {
 								Contactos
 							</a>
 						</li>
-					</div>
-				</ul>
+					</ul>
+				</div>
+
 			) : Location.pathname === '/Client' ? (
-				<ul className='flex lg:flex-col gap-3'>
-					<div className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg'>
+				<div className='flex lg:flex-col gap-3'>
+					<ul className='flex flex-row lg:block lg:mr-1 lg:mb-3 text-lg'>
 						<li>
 							<a href='/' className='pl-4'>
 								HOME
 							</a>
 						</li>
-					</div>
+					</ul>
 
-					<div className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-11 w-full h-full'>
+					<ul className='menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-11 w-full h-full'>
 						<li>
-							<a
-								href='#C_one'
-								className={`btn_sidebar lg:pr-[70px]`}
-							>
+							<a href='#C_one' className={`btn_sidebar lg:pr-[70px]`}>
 								Rastreo
 							</a>
 						</li>
 
 						<li>
-							<a
-								href='#C_two'
-								className={`btn_sidebar  lg:pr-[35px]`}
-							>
+							<a href='#C_two' className={`btn_sidebar  lg:pr-[35px]`}>
 								Cotizaciones
 							</a>
 						</li>
 
 						<li>
-							<a
-								href='#C_three'
-								className={`btn_sidebar  lg:pr-[50px]`}
-							>
+							<a href='#C_three' className={`btn_sidebar  lg:pr-[50px]`}>
 								Contratar servicio
 							</a>
 						</li>
 
 						<li>
-							<a
-								href='#C_four'
-								className={`btn_sidebar  lg:pr-[40px]`}
-							>
+							<a href='#C_four' className={`btn_sidebar  lg:pr-[40px]`}>
 								LLenar formularios
 							</a>
 						</li>
-					</div>
-				</ul>
+					</ul>
+				</div>
+
 			) : (
 				<ul className='relative menu flex flex-row justify-center lg:flex-col gap-3 lg:gap-7 w-full  lg:ml-6'>
 					<li>
